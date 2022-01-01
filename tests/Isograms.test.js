@@ -20,4 +20,8 @@ describe("For Isogram", () => {
           expect(IsogramCheck(singleCharacterString)).toBeTruthy();
        });
     });
+
+    test(`IsogramCheck returns false when provided with "aa" string`, () => {
+        expect(IsogramCheck("aa")).toBeFalsy();
+    })
 });

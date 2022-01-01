@@ -28,4 +28,12 @@ describe("For Isogram", () => {
     test(`IsogramCheck returns false when provided with "bb" string`, () => {
         expect(IsogramCheck("bb")).toBeFalsy();
     });
+
+    test(`IsogramCheck returns false when provided with "aba" string`, () => {
+        expect(IsogramCheck("aba")).toBeFalsy();
+    });
+
+    test(`IsogramCheck returns false when provided with "moOse" string`, () => {
+        expect(IsogramCheck("moOse")).toBeFalsy();
+    });
 });

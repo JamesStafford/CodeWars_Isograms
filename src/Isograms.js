@@ -6,10 +6,11 @@ export function IsogramCheck(isogram) {
     const characterList = [];
 
     for(const character of isogram) {
-        if (characterList.length > 0 && characterList.includes(character)) {
+        const lowerCaseCharacter = character.toLowerCase();
+        if (characterList.length > 0 && characterList.includes(lowerCaseCharacter)) {
             return false
         } else {
-            characterList.push(character);
+            characterList.push(lowerCaseCharacter);
         }
     }
     return true;

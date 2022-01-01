@@ -9,4 +9,15 @@ describe("For Isogram", () => {
        expect(IsogramCheck("")).toBeTruthy();
     });
 
+    describe("IsogramCheck returns true for single character string", () => {
+       test.each([
+           "a",
+           "b",
+           "c",
+           "d",
+           "e",
+       ])(`IsogramChecker returns true for "%i"`, (singleCharacterString) => {
+          expect(IsogramCheck(singleCharacterString)).toBeTruthy();
+       });
+    });
 });

@@ -36,4 +36,12 @@ describe("For Isogram", () => {
     test(`IsogramCheck returns false when provided with "moOse" string`, () => {
         expect(IsogramCheck("moOse")).toBeFalsy();
     });
+
+    test(`IsogramCheck returns false when provided with "isIsogram" string`, () => {
+        expect(IsogramCheck("isIsogram")).toBeFalsy();
+    });
+
+    test(`IsogramCheck returns false when provided with "Dermatoglyphics" string`, () => {
+        expect(IsogramCheck("Dermatoglyphics")).toBeTruthy();
+    });
 });
